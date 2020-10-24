@@ -130,8 +130,8 @@ var ReactGridLayout = /*#__PURE__*/function (_React$Component) {
       var layout = _this.state.layout; // This is relative to the DOM element that this event fired for.
 
       var _e$nativeEvent = e.nativeEvent,
-          offsetX = _e$nativeEvent.offsetX,
-          offsetY = _e$nativeEvent.offsetY;
+          offsetX = _e$nativeEvent.clientX,
+          offsetY = _e$nativeEvent.clientY - 56;
       var droppingPosition = {
         left: offsetX,
         top: offsetY,
